@@ -6,6 +6,14 @@ import { PortfolioView } from './views/PortfolioView';
 import { InboxView } from './views/InboxView';
 import { AnalyticsView } from './views/AnalyticsView';
 import { CaseDetailView } from './views/CaseDetailView';
+import SettingsView from './views/SettingsView';
+import AgentsView from './views/AgentsView';
+import CRMFieldsView from './views/CRMFieldsView';
+import TemplatesView from './views/TemplatesView';
+import SchedulesView from './views/SchedulesView';
+import QueuesView from './views/QueuesView';
+import RoutesView from './views/RoutesView';
+import TagsView from './views/TagsView';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function App() {
@@ -39,14 +47,21 @@ export default function App() {
           <PortfolioView onCaseClick={handleCaseClick} />
         );
       case 'settings':
-        return (
-          <div className="p-8 flex items-center justify-center h-full">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold text-slate-900 mb-2">Settings</h2>
-              <p className="text-slate-500">Configuration module coming soon.</p>
-            </div>
-          </div>
-        );
+        return <SettingsView onNavigate={setActiveTab} />;
+      case 'agents':
+        return <AgentsView />;
+      case 'crm':
+        return <CRMFieldsView />;
+      case 'templates':
+        return <TemplatesView />;
+      case 'schedules':
+        return <SchedulesView />;
+      case 'queues':
+        return <QueuesView />;
+      case 'routes':
+        return <RoutesView />;
+      case 'tags':
+        return <TagsView />;
       default:
         return <DashboardView />;
     }
@@ -54,7 +69,7 @@ export default function App() {
 
   return (
     <div className="flex min-h-screen bg-slate-50">
-      <Sidebar activeTab={activeTab === 'case-detail' ? 'portfolio' : activeTab} setActiveTab={setActiveTab} />
+      <Sidebar activeTab={activeTab === 'case-detail' ? 'portfolio' : (['agents', 'crm', 'templates', 'schedules', 'queues', 'routes', 'tags'].includes(activeTab) ? 'settings' : activeTab)} setActiveTab={setActiveTab} />
       
       <div className="flex-1 flex flex-col min-w-0">
         <Header title="Sada" />

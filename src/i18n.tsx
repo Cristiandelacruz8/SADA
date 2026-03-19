@@ -20,6 +20,94 @@ const translations: Translations = {
   'nav.enterprise_suite': { en: 'Enterprise Suite', es: 'Suite Empresarial', pt: 'Suite Empresarial', fr: 'Suite Entreprise' },
   'nav.verified_admin': { en: 'Verified Admin', es: 'Administrador Verificado', pt: 'Administrador Verificado', fr: 'Administrateur vérifié' },
 
+  // Settings
+  'settings.title': { en: 'System Configuration', es: 'Configuración del Sistema', pt: 'Configuração do Sistema', fr: 'Configuration du système' },
+  'settings.subtitle': { en: 'Manage global parameters, users, and workflows.', es: 'Administra los parámetros globales, usuarios y flujos de trabajo.', pt: 'Gerencie parâmetros globais, usuários e fluxos de trabalho.', fr: 'Gérez les paramètres globaux, les utilisateurs et les flux de travail.' },
+  'settings.agents': { en: 'Agents, Roles & Permissions', es: 'Agentes, Roles y Permisos', pt: 'Agentes, Funções e Permissões', fr: 'Agents, rôles et permissions' },
+  'settings.agents_desc': { en: 'Manage user access and security levels.', es: 'Gestiona el acceso de los usuarios y niveles de seguridad.', pt: 'Gerencie o acesso do usuário e os níveis de segurança.', fr: 'Gérez l\'accès des utilisateurs et les niveaux de sécurité.' },
+  'settings.crm': { en: 'CRM Field Management', es: 'Gestión de Campos CRM', pt: 'Gestão de Campos CRM', fr: 'Gestion des champs CRM' },
+  'settings.crm_desc': { en: 'Customize data fields for your clients and cases.', es: 'Personaliza los campos de datos para tus clientes y casos.', pt: 'Personalize os campos de dados para seus clientes e casos.', fr: 'Personnalisez les champs de données pour vos clients et dossiers.' },
+  'settings.templates': { en: 'Template Management', es: 'Gestión de Plantillas', pt: 'Gestão de Modelos', fr: 'Gestion des modèles' },
+  'settings.templates_desc': { en: 'Manage message and document templates.', es: 'Administra plantillas de mensajes y documentos.', pt: 'Gerencie modelos de mensagens e documentos.', fr: 'Gérez les modèles de messages et de documents.' },
+  'settings.schedules': { en: 'Schedule Configuration', es: 'Configuración de Horarios', pt: 'Configuração de Horários', fr: 'Configuration des horaires' },
+  'settings.schedules_desc': { en: 'Define operating hours and holidays.', es: 'Define las horas de operación y días festivos.', pt: 'Defina o horário de funcionamento e feriados.', fr: 'Définissez les heures d\'ouverture et les jours fériés.' },
+  'settings.queues': { en: 'Queue Configuration', es: 'Configuración de Colas', pt: 'Configuração de Filas', fr: 'Configuration des files d\'attente' },
+  'settings.queues_desc': { en: 'Configure service queues and priorities.', es: 'Configura las colas de atención y prioridades.', pt: 'Configure filas de serviço e prioridades.', fr: 'Configurez les files d\'attente et les priorités.' },
+  'settings.routes': { en: 'Route Configuration', es: 'Configuración de Rutas', pt: 'Configuração de Rotas', fr: 'Configuration des routes' },
+  'settings.routes_desc': { en: 'Establish intelligent routing rules.', es: 'Establece reglas de enrutamiento inteligente.', pt: 'Estabeleça regras de roteamento inteligente.', fr: 'Établissez des règles de routage intelligentes.' },
+  'settings.tags': { en: 'Tagging', es: 'Etiquetado', pt: 'Etiquetagem', fr: 'Étiquetage' },
+  'settings.tags_desc': { en: 'Manage tags to categorize cases and clients.', es: 'Gestiona etiquetas para categorizar casos y clientes.', pt: 'Gerencie tags para categorizar casos e clientes.', fr: 'Gérez les tags pour catégoriser les dossiers et les clients.' },
+
+  // Agents
+  'agents.title': { en: 'Agent Management', es: 'Listado de agentes', pt: 'Gestão de Agentes', fr: 'Gestion des agents' },
+  'agents.create': { en: 'Create Agent', es: 'Crear Agente', pt: 'Criar Agente', fr: 'Créer un agent' },
+  'agents.username': { en: 'Username', es: 'Nombre de usuario', pt: 'Nome de usuário', fr: 'Nom d\'utilisateur' },
+  'agents.name': { en: 'Name', es: 'Nombre', pt: 'Nome', fr: 'Nom' },
+  'agents.email': { en: 'Email', es: 'Email', pt: 'Email', fr: 'Email' },
+  'agents.created_from': { en: 'Created from', es: 'Creado desde', pt: 'Criado de', fr: 'Créé à partir de' },
+  'agents.created_to': { en: 'Created to', es: 'Creado hasta', pt: 'Criado até', fr: 'Créé jusqu\'à' },
+  'agents.queue': { en: 'Queue', es: 'Cola', pt: 'Fila', fr: 'File d\'attente' },
+  'agents.active': { en: 'Active', es: 'Activo', pt: 'Ativo', fr: 'Actif' },
+  'agents.created_at': { en: 'Created', es: 'Creado', pt: 'Criado', fr: 'Créé' },
+  'agents.roles': { en: 'Roles', es: 'Roles', pt: 'Funções', fr: 'Rôles' },
+  'agents.showing': { en: 'Showing', es: 'Mostrando', pt: 'Exibindo', fr: 'Affichage de' },
+  'agents.of': { en: 'of', es: 'de', pt: 'de', fr: 'sur' },
+  'agents.total': { en: 'Total', es: 'Total', pt: 'Total', fr: 'Total' },
+
+  // CRM Fields
+  'crm.title': { en: 'CRM Fields Management', es: 'Listado de campos CRM', pt: 'Gestão de Campos CRM', fr: 'Gestion des champs CRM' },
+  'crm.add': { en: 'Add Field', es: 'Añadir campo', pt: 'Adicionar campo', fr: 'Ajouter un champ' },
+  'crm.name': { en: 'Name', es: 'Nombre', pt: 'Nome', fr: 'Nom' },
+  'crm.type': { en: 'Type', es: 'Tipo', pt: 'Tipo', fr: 'Type' },
+  'crm.required': { en: 'Required', es: 'Requerido', pt: 'Obrigatório', fr: 'Requis' },
+  'crm.readonly': { en: 'Read Only', es: 'Solo lectura', pt: 'Somente leitura', fr: 'Lecture seule' },
+  'crm.order': { en: 'Order', es: 'Orden', pt: 'Ordem', fr: 'Ordre' },
+  'crm.default_value': { en: 'Default Value', es: 'Valor por defecto', pt: 'Valor padrão', fr: 'Valeur par défaut' },
+  'crm.validation': { en: 'Validation', es: 'Validación', pt: 'Validação', fr: 'Validation' },
+  'crm.created': { en: 'Created', es: 'Creado', pt: 'Criado', fr: 'Créé' },
+  'crm.updated': { en: 'Updated', es: 'Actualizado', pt: 'Atualizado', fr: 'Mis à jour' },
+  'crm.type_text': { en: 'Text', es: 'Texto', pt: 'Texto', fr: 'Texte' },
+  'crm.type_date': { en: 'Date', es: 'Fecha', pt: 'Data', fr: 'Date' },
+  'crm.type_number': { en: 'Number', es: 'Número', pt: 'Número', fr: 'Nombre' },
+  'crm.type_select': { en: 'Select', es: 'Selección', pt: 'Seleção', fr: 'Sélection' },
+  'crm.save': { en: 'Save Field', es: 'Guardar campo', pt: 'Salvar campo', fr: 'Enregistrer le champ' },
+  'crm.cancel': { en: 'Cancel', es: 'Cancelar', pt: 'Cancelar', fr: 'Annuler' },
+  'crm.delete_confirm': { en: 'Are you sure you want to delete this field?', es: '¿Estás seguro de que quieres eliminar este campo?', pt: 'Tem certeza de que deseja excluir este campo?', fr: 'Êtes-vous sûr de vouloir supprimer ce champ ?' },
+
+  // Templates
+  'templates.title': { en: 'Template Management', es: 'Gestión de Plantillas', pt: 'Gestão de Modelos', fr: 'Gestion des modèles' },
+  'templates.add': { en: 'Add Template', es: 'Añadir plantilla', pt: 'Adicionar modelo', fr: 'Ajouter un modèle' },
+  'templates.name': { en: 'Name', es: 'Nombre', pt: 'Nome', fr: 'Nom' },
+  'templates.type': { en: 'Type', es: 'Tipo', pt: 'Tipo', fr: 'Type' },
+  'templates.subject': { en: 'Subject', es: 'Asunto', pt: 'Assunto', fr: 'Sujet' },
+  'templates.content': { en: 'Content', es: 'Contenido', pt: 'Conteúdo', fr: 'Contenu' },
+  'templates.category': { en: 'Category', es: 'Categoría', pt: 'Categoria', fr: 'Catégorie' },
+
+  // Schedules
+  'schedules.title': { en: 'Operating Hours', es: 'Configuración de Horarios', pt: 'Configuração de Horários', fr: 'Configuration des horaires' },
+  'schedules.add': { en: 'Add Schedule', es: 'Añadir horario', pt: 'Adicionar horário', fr: 'Ajouter un horaire' },
+  'schedules.days': { en: 'Days', es: 'Días', pt: 'Dias', fr: 'Jours' },
+  'schedules.hours': { en: 'Hours', es: 'Horas', pt: 'Horas', fr: 'Heures' },
+  'schedules.timezone': { en: 'Timezone', es: 'Zona Horaria', pt: 'Fuso Horário', fr: 'Fuseau horaire' },
+
+  // Queues
+  'queues.title': { en: 'Service Queues', es: 'Configuración de Colas', pt: 'Configuração de Filas', fr: 'Configuration des files d\'attente' },
+  'queues.add': { en: 'Add Queue', es: 'Añadir cola', pt: 'Adicionar fila', fr: 'Ajouter une file' },
+  'queues.priority': { en: 'Priority', es: 'Prioridad', pt: 'Prioridade', fr: 'Priorité' },
+  'queues.strategy': { en: 'Strategy', es: 'Estrategia', pt: 'Estratégia', fr: 'Stratégie' },
+
+  // Routes
+  'routes.title': { en: 'Routing Rules', es: 'Gestión de Rutas', pt: 'Gestão de Rotas', fr: 'Gestion des routes' },
+  'routes.add': { en: 'Add Rule', es: 'Añadir ruta', pt: 'Adicionar rota', fr: 'Ajouter une route' },
+  'routes.condition': { en: 'Condition', es: 'Condición', pt: 'Condição', fr: 'Condition' },
+  'routes.destination': { en: 'Destination', es: 'Destino', pt: 'Destino', fr: 'Destination' },
+
+  // Tags
+  'tags.title': { en: 'Tag Management', es: 'Etiquetado', pt: 'Gestão de Etiquetas', fr: 'Gestion des tags' },
+  'tags.add': { en: 'Add Tag', es: 'Añadir etiqueta', pt: 'Adicionar etiqueta', fr: 'Ajouter un tag' },
+  'tags.color': { en: 'Color', es: 'Color', pt: 'Cor', fr: 'Couleur' },
+  'tags.usage': { en: 'Usage', es: 'Uso', pt: 'Uso', fr: 'Utilisation' },
+
   // Header
   'header.search': { en: 'Search anything...', es: 'Buscar algo...', pt: 'Pesquisar algo...', fr: 'Rechercher...' },
   'header.global_ops': { en: 'Global Ops', es: 'Operaciones Globales', pt: 'Operações Globais', fr: 'Opérations mondiales' },

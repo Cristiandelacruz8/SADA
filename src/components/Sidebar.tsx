@@ -12,6 +12,8 @@ import {
 import { cn } from '../utils';
 import { useTranslation } from '../i18n';
 
+import { Logo } from './Logo';
+
 interface SidebarProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
@@ -32,11 +34,7 @@ export function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
     <aside className="w-64 bg-white border-r border-slate-200 flex flex-col h-screen sticky top-0">
       <div className="p-6">
         <div className="flex items-center gap-2 mb-8">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">S</div>
-          <div>
-            <h1 className="font-bold text-slate-900 leading-tight">Sada</h1>
-            <p className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">{t('nav.enterprise_suite')}</p>
-          </div>
+          <Logo />
         </div>
 
         <nav className="space-y-1">
